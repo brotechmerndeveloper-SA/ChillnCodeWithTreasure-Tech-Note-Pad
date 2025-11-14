@@ -1,0 +1,82 @@
+<!-- 
+ Name: ChillNCodeWithTreasure
+ E-mail: brotech.merndeveloper@gmail.com
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Note Pad</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <h1 class="app-title">
+                    <i class="fas fa-code"></i>
+                    Tech Note Pad
+                </h1>
+                <div class="header-controls">
+                    <button id="theme-toggle" class="theme-toggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button id="new-note" class="btn-primary">
+                        <i class="fas fa-plus"></i> New Note
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <aside class="sidebar">
+                <div class="search-container">
+                    <input type="text" id="search" placeholder="Search notes...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="notes-list" id="notes-list">
+                    <!-- Notes will be dynamically added here -->
+                </div>
+            </aside>
+
+            <main class="editor">
+                <div class="editor-header">
+                    <input type="text" id="note-title" placeholder="Note Title">
+                    <div class="editor-controls">
+                        <button id="save-note" class="btn-primary">
+                            <i class="fas fa-save"></i> Save
+                        </button>
+                        <button id="delete-note" class="btn-danger">
+                            <i class="fas fa-trash"></i> Delete
+                        </button>
+                    </div>
+                </div>
+                <div class="editor-content">
+                    <textarea id="note-content" placeholder="Start typing your note here..."></textarea>
+                    <div class="editor-footer">
+                        <div class="char-count">
+                            <span id="char-counter">0</span> characters
+                        </div>
+                        <div class="editor-actions">
+                            <button id="format-code" class="btn-secondary">
+                                <i class="fas fa-code"></i> Format Code
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <div id="notification" class="notification">
+            Note saved successfully!
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
