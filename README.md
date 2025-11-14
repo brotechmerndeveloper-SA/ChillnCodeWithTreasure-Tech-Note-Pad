@@ -19,7 +19,7 @@ Features:
 🎯 Local Storage - All data persists in your browser
 
 Live Demo:
-[https://github.com/brotechmerndeveloper-SA/ChillnCodeWithTreasure-Tech-Note-Pad]
+[https://brotechmerndeveloper-sa.github.io/ChillnCodeWithTreasure-Tech-Note-Pad/]
 
 <img width="1286" height="601" alt="preview" src="https://github.com/user-attachments/assets/ffcd2626-b77b-4bf9-b1bc-2439fd4bbb1b" />
 
